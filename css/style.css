@@ -2084,6 +2084,20 @@ textarea, input {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-transition: .3s background-color;
+  transition: .3s background-color;
+}
+
+.model-specs__item-top.active .model-specs__item-dec {
+  background-color: transparent;
+}
+
+.model-specs__item-top.active .model-specs__item-dec::after, .model-specs__item-top.active .model-specs__item-dec::before {
+  background-color: #F4BC00;
+}
+
+.model-specs__item-top.active .model-specs__item-dec::before {
+  height: 0;
 }
 
 .model-specs__item-dec {
@@ -2105,6 +2119,8 @@ textarea, input {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: .3s background-color, .3s height;
+  transition: .3s background-color, .3s height;
 }
 
 .model-specs__item-dec::after {
