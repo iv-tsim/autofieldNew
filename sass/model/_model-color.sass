@@ -1,0 +1,73 @@
+.model
+    &-color
+        padding-bottom: 130px
+        &__container
+            display: flex
+            align-items: flex-start
+            position: relative
+        &__title
+            position: absolute
+            top: 0
+            left: 15px
+            z-index: 2
+        &__slider
+            &-wrapper
+                width: 60%
+                margin-left: calc((100% - 330px) / 12)
+                position: relative
+                margin-right: 70px
+            &-arrows
+                position: absolute
+                bottom: 0
+                left: 100%
+        &__item
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: contain
+            &-sizer
+                padding-bottom: 70%
+        &__thumbs
+            align-self: stretch
+            max-height: 400px
+            flex-grow: 1
+        &__thumb
+            display: flex
+            align-items: center
+            cursor: pointer
+            &-color
+                width: 25px
+                border-radius: 50%
+                margin-right: 30px
+                position: relative
+                &::after
+                    width: 40%
+                    height: 40%
+                    background-color: #fff
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    border-radius: 50%
+                    opacity: 0
+                    visibility: hidden
+                    transition: .3s opacity, .3s visibility
+                &__sizer
+                    padding-bottom: 100%
+                &[data-color="#FFFFFF"]
+                    border: 2px solid #E5E5E5
+                    &::after
+                        background-color: #E5E5E5
+            &-text
+                font-size: 12px
+                font-weight: 700
+                color: $gray
+                transition: .3s color
+            &.swiper-slide-thumb-active, &:hover
+                .model-color__thumb-color
+                    &::after
+                        opacity: 1
+                        visibility: visible
+                .model-color__thumbs-text
+                    color: $grayDark

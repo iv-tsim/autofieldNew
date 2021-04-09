@@ -1,0 +1,14 @@
+.model
+    &-menu
+        padding: 50px 0
+        display: flex
+        align-items: center
+        justify-content: center
+        &__item
+            margin-right: 110px
+            color: $gray
+            transition: .3s color
+            &:last-child
+                margin-right: 0
+            &.active, &:hover
+                color: $grayDark

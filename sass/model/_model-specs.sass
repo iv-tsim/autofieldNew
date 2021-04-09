@@ -1,0 +1,51 @@
+.model
+    &-specs
+        &__item
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 70px
+            &-top
+                padding: 7px 10px
+                background-color: $grayExtraLight
+                display: flex
+                align-items: center
+                cursor: pointer
+            &-dec
+                width: 25px
+                height: 25px
+                border-radius: 50%
+                border: 2px solid $main
+                background-color: $main
+                position: relative
+                &::after, &::before
+                    position: absolute
+                    display: block
+                    content: ''
+                    background-color: #fff
+                    border-radius: 2px
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                &::after
+                    width: 14px
+                    height: 2px
+                &::before
+                    width: 2px
+                    height: 14px
+                &__wrapper
+                    width: calc(((100% - 330px) / 12) + 20px)
+            &-body
+                display: none
+            &-item
+                display: flex
+                padding: 0 calc(((100% - 330px) / 12) + 30px)
+                border-bottom: 1px solid #E5E5E5
+                &__name, &__value
+                    flex-basis: 100px
+                    flex-grow: 1
+                    padding: 10px 0
+                &__name
+                    padding-right: 15px
+                    border-right: 1px solid #E5E5E5
+                &__value
+                    padding-left: 15px

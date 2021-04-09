@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/Louis-Regular.eot');
+    src: local('Louis Regular'), local('Louis-Regular'),
+    url('../fonts/Louis-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Louis-Regular.woff') format('woff'),
+    url('../fonts/Louis-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/Louis-Bold.eot');
+    src: local('Louis Bold'), local('Louis-Bold'),
+    url('../fonts/Louis-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Louis-Bold.woff') format('woff'),
+    url('../fonts/Louis-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/Louis-BoldItalic.eot');
+    src: local('Louis BoldItalic'), local('Louis-BoldItalic'),
+    url('../fonts/Louis-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Louis-BoldItalic.woff') format('woff'),
+    url('../fonts/Louis-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

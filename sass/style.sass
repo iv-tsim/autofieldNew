@@ -1,0 +1,210 @@
+@import _variables.sass
+
+// Общие настройки
+
+*, *::before, *::after
+    box-sizing: border-box
+
+*
+    outline: none !important
+    padding: 0
+    margin: 0
+
+body
+    font-family: 'Louis', sans-serif
+    font-size: 11px
+    font-weight: 400
+    color: $grayDark
+
+a
+    text-decoration: none
+    display: inline-block
+
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    width: 100%
+    overflow-x: hidden
+
+.content
+    flex: 1 0 auto
+
+.footer
+    flex: 0 0 auto
+
+.container
+    max-width: 1140px
+    padding: 0 15px
+    margin: 0 auto
+
+// Элементы, которые есть на всем сайте
+
+.link
+    position: relative
+    &::after
+        position: absolute
+        display: block
+        content: ''
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background-color: #fff
+        transition: .3s width
+    &:hover
+        &::after
+            width: 0
+    &_reverse
+        &::after
+            width: 0
+        &:hover
+            &::after
+                width: 100%
+    &_right
+        &::after
+            left: auto
+            right: 0
+
+.empty
+    padding-top: 0 !important
+    padding-bottom: 0 !important
+    margin-top: 0 !important
+    margin-bottom: 0 !important
+    height: 0 !important
+    border: none !important
+    min-height: 0 !important
+    pointer-events: none
+    &::after
+        display: none !important
+    &::before
+        display: none !important
+
+textarea, input
+    -webkit-appearance: none
+    -moz-appearance: none
+    border-radius: 0
+
+.title
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 24px
+    &_grand
+        font-size: 48px
+    &_small
+        text-transform: none
+        font-size: 14px
+    span
+        color: $main
+    
+.text
+    font-size: 11px
+    line-height: 160%
+    &_small
+        font-size: 9px
+        color: $gray
+        line-height: 177%
+
+.btn
+    background-color: $main
+    color: #fff
+    font-size: 12px
+    font-weight: 700
+    padding: 10px 35px
+    transition: .3s background-color
+    text-align: center
+    border: none
+    &:hover
+        background-color: $mainDark
+    &_tight
+        padding: 10px
+    &_border
+        background-color: transparent
+        border: 2px solid $grayLight
+        transition: .3s color, .3s border-color
+        color: $grayLight
+        &:hover
+            color: #000
+            border-color: #000
+            background-color: transparent
+        &_white
+            border-color: #fff
+            color: #fff
+            &:hover
+                border-color: $main
+                color: $main
+
+.input
+    border: 1px solid $grayLight
+    padding: 8px 10px
+    background-color: transparent
+    &-title
+        font-size: 11px
+        color: $gray
+        margin-bottom: 10px
+
+.policy
+    color: $grayDark
+    &::after
+        background-color: $grayDark
+
+// Файлы, относящиеся ко всем страницам
+
+@import ./general/_header.sass
+@import ./general/_footer.sass
+@import ./general/_slider.sass
+@import ./general/_breadcrumbs.sass
+@import ./general/_app.sass
+@import ./general/_tabs.sass
+
+// Файлы, относящиеся к Главной странице
+
+@import ./index/_hero.sass
+@import ./index/_description.sass
+@import ./index/_calc.sass
+
+// Файлы, относящиеся к странице спец предложений
+
+@import ./offer/_offer.sass
+
+// Файлы, относящиеся к single странице спец предложений
+
+@import ./offerSingle/_offerSingle.sass
+
+// Файлы, относящиеся странице услуг
+
+@import ./service/_service.sass
+
+// Файлы, относящиеся странице модели
+
+@import ./model/_model-hero.sass
+@import ./model/_model-menu.sass
+@import ./model/_model-desc.sass
+@import ./model/_model-links.sass
+@import ./model/_model-color.sass
+@import ./model/_model-parts.sass
+@import ./model/_model-safety.sass
+@import ./model/_model-advantages.sass
+@import ./model/_model-tech.sass
+@import ./model/_model-features.sass
+@import ./model/_model-innovations.sass
+@import ./model/_model-step.sass
+@import ./model/_model-tabs.sass
+@import ./model/_model-set.sass
+@import ./model/_model-specs.sass
+@import ./model/_model-accessories.sass
+@import ./model/_model-gallery.sass
+
+
+.alertify-notifier .ajs-message.ajs-warning
+    background: white
+    -webkit-box-shadow: 0 0 3px #333333
+    box-shadow: 0 0 3px #333333
+
+.alertify-notifier .ajs-message.ajs-success
+    color: #fff
+    background: rgba(40, 136, 62, 0.9)
+    text-shadow: 0 0 1px rgba(0,0,0,.5)
+
+.alertify-notifier
+    z-index: 99998

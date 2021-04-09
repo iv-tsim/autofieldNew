@@ -1,0 +1,28 @@
+.model
+    &-accessories
+        &__list
+            display: flex
+            flex-wrap: wrap
+            width: calc(100% + 30px)
+            margin-left: -15px
+            padding-bottom: 70px
+        &__item
+            flex-basis: 300px
+            flex-grow: 1
+            margin: 0 15px 30px 15px
+            display: flex
+            flex-direction: column
+            &-img
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: cover
+                margin-bottom: 15px
+                &__sizer
+                    padding-bottom: 51.7%
+            &-title
+                margin-bottom: 20px
+            &-text
+                margin-bottom: 25px
+                flex-grow: 1
+            &-caption
+                color: $gray

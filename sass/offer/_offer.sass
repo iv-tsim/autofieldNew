@@ -1,0 +1,40 @@
+.offer
+    padding-bottom: 100px
+    &-tabs
+        display: flex
+        align-items: center
+        margin-bottom: 40px
+        &__item
+            margin-right: 45px
+            color: $grayLight
+            cursor: pointer
+            transition: .3s color
+            &:last-child
+                margin-right: 0
+            &.active, &:hover
+                color: $grayDark
+    &-body
+        flex-wrap: wrap
+        width: calc(100% + 30px)
+        margin-left: -15px
+        display: none
+        &.active
+            display: flex
+    &-item
+        margin: 0 15px 30px 15px
+        flex-basis: 300px
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        &__img
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            margin-bottom: 15px
+            &-sizer
+                padding-bottom: 51.5%
+        &__title
+            margin-bottom: 15px
+        &__top
+            flex-grow: 1
+            margin-bottom: 30px

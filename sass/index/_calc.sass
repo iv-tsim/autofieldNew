@@ -1,0 +1,32 @@
+.calc
+    background-color: $grayExtraLight
+    padding: 40px 0 65px 0
+    &-title
+        margin-bottom: 30px
+    &-main
+        background-color: #fff
+        display: flex
+    &-column
+        width: calc(100% / 3 * 2)
+        margin: 0 auto
+        padding: 40px 0 50px 0
+        &__wrapper
+            width: 50%
+            &:first-child
+                border-right: 1px solid $grayLight
+    &-item
+        margin-bottom: 20px
+        &__wrapper
+            display: flex
+            justify-content: space-between
+            width: calc(100% + 30px)
+            margin-left: -15px
+            .calc-item
+                flex-grow: 1
+                margin: 0 15px
+    &-input
+        width: 100%
+    &-policy
+        margin-bottom: 10px
+    &-submit
+        width: 100%

@@ -1,0 +1,45 @@
+.model
+    &-features
+        padding: 100px 0 60px 0
+        &__top
+            display: flex
+            align-items: center
+            margin-bottom: 55px
+        &__title
+            width: calc((100% / 3) + 30px)
+        &__desc
+            max-width: 630px
+            color: $gray
+        &__main
+            display: flex
+            align-items: flex-start
+        &__img
+            min-width: calc(100% / 3)
+            width: calc(100% / 3)
+            margin-right: 30px
+            margin-left: 0
+            &-item
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: cover
+                &__sizer
+                    padding-bottom: 79%
+        &__text
+            margin-left: 0
+            max-width: 540px
+            &-wrapper
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-self: stretch
+                width: calc((100% / 12 * 7) - 30px)
+            &-item
+                &__title
+                    font-size: 48px
+                    line-height: 115%
+                    font-weight: 700
+                    margin-bottom: 50px
+            &-bottom
+                display: flex
+                align-items: flex-end
+                justify-content: space-between

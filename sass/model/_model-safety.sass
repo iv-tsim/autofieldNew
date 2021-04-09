@@ -1,0 +1,38 @@
+.model
+    &-safety
+        padding: 100px 0 30px 0
+        &__container
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+        &__main, &__img
+            width: calc(50% - 15px)
+        &__img
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            &-sizer
+                padding-bottom: 115%
+        &__title
+            margin-bottom: 35px
+            max-width: 350px
+        &__text
+            margin-bottom: 60px
+            p
+                margin-bottom: 10px
+                &:last-child
+                    margin-bottom: 0
+        &__list
+            display: flex
+            flex-wrap: wrap
+            width: calc(100% + 30px)
+            margin-left: -15px
+        &__item
+            flex-basis: 200px
+            flex-grow: 1
+            margin: 0 15px 50px 15px
+            &-number
+                font-size: 54px
+                font-weight: 700
+                color: $main
+                margin-bottom: 10px

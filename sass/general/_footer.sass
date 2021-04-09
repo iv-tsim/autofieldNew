@@ -1,0 +1,44 @@
+.footer
+    &-top
+        border-bottom: 1px solid #E5E5E5
+        padding-bottom: 35px
+    &-list
+        display: flex
+        flex-wrap: wrap
+        width: calc(100% + 30px)
+        margin-left: -15px
+    &-item
+        flex-basis: 140px
+        flex-grow: 1
+        margin: 0 15px 30px 15px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        &__title
+            font-size: 13px
+            font-weight: 700
+            color: $grayDark
+            margin-bottom: 10px
+        a
+            color: $gray
+            font-size: 11px
+            margin-bottom: 5px
+            &::after
+                background-color: $gray
+    &-bottom
+        padding: 25px 0 60px 0
+        &__container
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+        &__item
+            div
+                font-size: 11px
+                color: $gray
+                margin-bottom: 10px
+                &:last-child
+                    margin-bottom: 0
+                a
+                    color: $gray
+                    &::after
+                        background-color: $gray

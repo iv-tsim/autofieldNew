@@ -1,0 +1,33 @@
+.slider
+    padding: 55px 0 80px 0
+    &-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 30px
+    &-count
+        display: flex
+        align-items: center
+        bottom: auto
+        left: auto
+        width: auto
+        color: $grayLight
+        &__current
+            color: $main
+        &__dec
+            margin: 0 7px
+    &-arrows
+        margin-top: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+    &-arrow
+        cursor: pointer
+        &:first-child
+            margin-right: 30px
+        &:last-child
+            margin-left: 30px
+    &-item
+        img
+            max-width: 100%
+            display: block

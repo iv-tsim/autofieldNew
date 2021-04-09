@@ -1,0 +1,26 @@
+.model
+    &-gallery
+        width: 100%
+        margin-bottom: 30px
+        perspective-origin: 
+        &__arrows
+            position: absolute
+            top: 50%
+            width: calc(100% - 30px)
+            left: 50%
+            justify-content: space-between
+            transform: translate(-50%, -50%)
+            z-index: 2
+        &__item
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            &-sizer
+                padding-bottom: 54%
+        &__thumbs
+            padding-bottom: 110px
+            &-item
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: cover
+                cursor: pointer
