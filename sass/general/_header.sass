@@ -20,6 +20,8 @@
                 transition: .3s color
                 &:hover
                     color: $main
+    &-mobile
+        display: none
     &-right
         a
             color: $gray
@@ -52,3 +54,70 @@
         font-size: 18px
         color: $grayDark
         font-weight: 700
+    &-burger
+        padding: 10px
+        width: 40px
+        height: 30px
+        cursor: pointer
+        position: relative
+        display: none
+        span
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            height: 2px
+            width: 20px
+            background-color: $grayDark
+            &:first-child
+                top: 10px
+            &:nth-child(2)
+                top: 14px
+            &:last-child
+                bottom: 10px
+
+@media (max-width: 1100px)
+    .header
+        &-top
+            padding: 5px 0
+        &-main
+            padding: 5px 0
+        &-menu
+            display: none
+            &__item
+                a
+                    font-size: 11px
+            &__separator
+                margin: 0 5px
+        &-mobile
+            display: flex
+        &-right
+            display: none
+        &-burger
+            display: block
+        &-address
+            display: none
+        &-btn
+            display: none
+        &-chevrolet
+            display: none
+        &-search
+            display: none
+        &-phone
+            font-size: 16px
+
+@media (max-width: 450px)
+    .header
+        &-logo
+            img
+                max-width: 190px
+
+@media (max-width: 360px)
+    .header
+        &-top
+            &__container
+                flex-direction: column
+        &-menu
+            margin-bottom: 5px
+        &-main
+            &__container
+                flex-direction: column
