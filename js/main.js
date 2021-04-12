@@ -358,7 +358,41 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerGroup: 2,
         observer: true,
         observeParents: true,
-        touchEventsTarget: 'wrapper'
+        touchEventsTarget: 'wrapper',
+        breakpoints: {
+
+            1000: {
+
+                spaceBetween: 30,
+                slidesPerView: 6,
+
+            },
+            800: {
+
+                spaceBetween: 20,
+                slidesPerView: 5,
+
+            },
+            600: {
+
+                spaceBetween: 20,
+                slidesPerView: 4,
+
+            },
+            500: {
+
+                spaceBetween: 20,
+                slidesPerView: 3,
+
+            },
+            0: {
+
+                spaceBetween: 20,
+                slidesPerView: 2,
+
+            }
+
+        }
 
     });
 
@@ -391,7 +425,41 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerGroup: 2,
         observer: true,
         observeParents: true,
-        touchEventsTarget: 'wrapper'
+        touchEventsTarget: 'wrapper',
+        breakpoints: {
+
+            1000: {
+
+                spaceBetween: 30,
+                slidesPerView: 6,
+
+            },
+            800: {
+
+                spaceBetween: 20,
+                slidesPerView: 5,
+
+            },
+            600: {
+
+                spaceBetween: 20,
+                slidesPerView: 4,
+
+            },
+            500: {
+
+                spaceBetween: 20,
+                slidesPerView: 3,
+
+            },
+            0: {
+
+                spaceBetween: 20,
+                slidesPerView: 2,
+
+            }
+
+        }
 
     });
 

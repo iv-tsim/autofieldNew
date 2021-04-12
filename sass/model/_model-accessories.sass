@@ -26,3 +26,28 @@
                 flex-grow: 1
             &-caption
                 color: $gray
+
+@media (max-width: 1100px)
+    .model
+        &-accessories
+            &__list
+                padding-bottom: 50px
+            &__item
+                &-img
+                    margin-bottom: 10px
+                &-title
+                    margin-bottom: 15px
+                &-text
+                    margin-bottom: 20px
+
+@media (max-width: 900px)
+    .model
+        &-accessories
+            &__list
+                padding-bottom: 30px
+            &__item
+                margin: 0 15px 20px 15px
+                &-title
+                    margin-bottom: 10px
+                &-text
+                    margin-bottom: 15px

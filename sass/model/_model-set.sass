@@ -64,3 +64,64 @@
                 flex-basis: 100px
                 flex-grow: 1
                 margin: 0 15px
+
+@media (max-width: 1100px)
+    .model
+        &-set
+            &__item
+                padding: 30px 0
+                &-main
+                    margin-right: 20px
+                &-title
+                    margin-bottom: 20px
+                &-img
+                    margin-bottom: 25px
+                &-info
+                    width: calc((100% / 12 * 7) - 30px)
+                &-list
+                    &__item
+                        margin-right: 30px
+                        .bold
+                            margin: 8px 0
+                            font-size: 22px
+                &-info
+                    ul
+                        margin-bottom: 25px
+
+@media (max-width: 750px)
+    .model
+        &-set
+            &__item
+                padding: 20px 0
+                flex-direction: column
+                &-main
+                    margin-right: 0
+                    width: 100%
+                    margin-bottom: 20px
+                &-title
+                    margin-bottom: 15px
+                &-img
+                    margin-bottom: 15px
+                &-info
+                    width: 100%
+                &-list
+                    &__item
+                        margin-right: 30px
+                        .bold
+                            margin: 8px 0
+                            font-size: 22px
+                &-info
+                    ul
+                        margin-bottom: 20px
+
+@media (max-width: 750px)
+    .model
+        &-set
+            &__item
+                &-btns
+                    flex-direction: column
+                &-btn
+                    flex-basis: auto
+                    margin-bottom: 10px
+                    &:last-child
+                        margin-bottom: 0
