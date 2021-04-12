@@ -368,6 +368,18 @@ textarea, input {
   }
 }
 
+@media (max-width: 350px) {
+  .title {
+    font-size: 16px;
+  }
+  .title_grand {
+    font-size: 22px;
+  }
+  .title_small {
+    font-size: 11px;
+  }
+}
+
 .header-top {
   padding: 12px 0;
   background-color: #F6F6F6;
@@ -1401,6 +1413,51 @@ textarea, input {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1100px) {
+  .offer {
+    padding-bottom: 80px;
+  }
+  .offer-tabs {
+    margin-bottom: 30px;
+  }
+  .offer-tabs__item {
+    margin-right: 40px;
+  }
+  .offer-item__img {
+    margin-bottom: 10px;
+  }
+  .offer-item__title {
+    margin-bottom: 10px;
+  }
+  .offer-item__top {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .offer {
+    padding-bottom: 60px;
+  }
+  .offer-tabs {
+    margin-bottom: 25px;
+  }
+  .offer-tabs__item {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .offer {
+    padding-bottom: 30px;
+  }
+  .offer-tabs {
+    margin-bottom: 20px;
+  }
+  .offer-tabs__item {
+    margin-right: 20px;
+  }
 }
 
 .offerSingle {
