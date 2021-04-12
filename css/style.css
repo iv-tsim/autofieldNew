@@ -354,6 +354,12 @@ textarea, input {
   .title_small {
     font-size: 14px;
   }
+  .text {
+    font-size: 10px;
+  }
+  .text_small {
+    font-size: 8px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -837,6 +843,25 @@ textarea, input {
   background-color: #9D9C9F;
 }
 
+@media (max-width: 1100px) {
+  .breadcrumbs-container {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .breadcrumbs-container {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .breadcrumbs-container {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
 .app {
   background-color: #C4C4C4;
   padding: 60px 0;
@@ -877,6 +902,65 @@ textarea, input {
 
 .app-policy {
   font-size: 9px;
+}
+
+@media (max-width: 1100px) {
+  .app {
+    padding: 50px 0;
+  }
+  .app-main {
+    padding: 40px 80px 50px 80px;
+  }
+  .app-title {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 900px) {
+  .app {
+    padding: 40px 0;
+  }
+  .app-main {
+    padding: 30px 50px;
+  }
+  .app-title {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .app {
+    padding: 30px 0;
+  }
+  .app-main {
+    padding: 20px 30px;
+  }
+  .app-title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .app {
+    padding: 25px 0;
+  }
+  .app-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .app-item__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .app-item__wrapper:last-child {
+    margin-bottom: 0;
+  }
+  .app-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .tabs {
@@ -1512,6 +1596,42 @@ textarea, input {
 
 .offerSingle-desc__item p:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .offerSingle {
+    padding-bottom: 30px;
+  }
+  .offerSingle-img {
+    margin-bottom: 30px;
+  }
+  .offerSingle-title {
+    margin-bottom: 25px;
+  }
+  .offerSingle-desc {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .offerSingle {
+    padding-bottom: 20px;
+  }
+  .offerSingle-img {
+    margin-bottom: 20px;
+  }
+  .offerSingle-title {
+    margin-bottom: 20px;
+  }
+  .offerSingle-desc {
+    padding: 35px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .offerSingle-desc {
+    padding: 20px 0;
+  }
 }
 
 .service-container {
