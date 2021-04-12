@@ -129,6 +129,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         '<div class="slider-count__dec">/</div>' +
                         '<div class="slider-count__total">' + addZero(total) + '</div>';
             }
+        },
+        breakpoints: {
+
+            900: {
+
+                slidesPerView: 3
+
+            },
+            650: {
+
+                slidesPerView: 2
+
+            },
+            0: {
+
+                slidesPerView: 1
+
+            },
+
         }
 
     });
@@ -154,6 +173,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         '<div class="slider-count__dec">/</div>' +
                         '<div class="slider-count__total">' + addZero(total) + '</div>';
             }
+        },
+        breakpoints: {
+
+            900: {
+
+                slidesPerView: 3
+
+            },
+            650: {
+
+                slidesPerView: 2
+
+            },
+            0: {
+
+                slidesPerView: 1
+
+            },
+
         }
 
     });
@@ -360,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const { target } = event;
 
-        if (target.closest('.choose-top')) {
+        if (target.closest('.choose-top') && !target.closest('.choose').classList.contains('inactive')) {
 
             let item = target.closest('.choose'),
                 itemBody = item.querySelector('.choose-body');

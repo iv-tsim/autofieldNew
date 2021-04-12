@@ -161,7 +161,7 @@ textarea, input
         left: 0
         width: 100%
         background-color: #fff
-        z-index: 2
+        z-index: 3
         max-height: 157px
         overflow: auto
         height: 0
@@ -203,6 +203,60 @@ textarea, input
     color: $grayDark
     &::after
         background-color: $grayDark
+
+@media (max-width: 1100px)
+    .title
+        font-size: 22px
+        &_grand
+            font-size: 40px
+        &_small
+            font-size: 14px
+
+    .btn
+        font-size: 12px
+        padding: 10px 35px
+        &_tight
+            padding: 10px
+
+    .input
+        padding: 8px 10px
+        &-title
+            font-size: 11px
+
+@media (max-width: 800px)
+    .title
+        font-size: 20px
+        &_grand
+            font-size: 34px
+        &_small
+            font-size: 14px
+
+    .btn
+        font-size: 12px
+        padding: 8px 25px
+        &_tight
+            padding: 8px
+
+    .input
+        padding: 6px 8px
+        &-title
+            font-size: 10px
+
+@media (max-width: 600px)
+    .title
+        font-size: 20px
+        &_grand
+            font-size: 28px
+        &_small
+            font-size: 14px
+
+@media (max-width: 500px)
+    .title
+        font-size: 18px
+        &_grand
+            font-size: 24px
+        &_small
+            font-size: 12px
 
 // Файлы, относящиеся ко всем страницам
 

@@ -39,3 +39,42 @@
         margin-bottom: 10px
     &-submit
         width: 100%
+
+@media (max-width: 1100px)
+    .calc
+        padding: 30px 0 50px 0
+        &-title
+            margin-bottom: 25px
+        &-column
+            width: calc(100% / 4 * 3)
+            padding: 30px 0 40px 0
+
+@media (max-width: 900px)
+    .calc
+        padding: 25px 0 40px 0
+        &-title
+            margin-bottom: 20px
+        &-column
+            width: calc(100% / 5 * 4)
+            padding: 25px 0 30px 0
+
+@media (max-width: 750px)
+    .calc
+        padding: 25px 0
+        &-main
+            flex-direction: column
+        &-item
+            margin-bottom: 15px
+            &__wrapper
+                width: calc(100% + 20px)
+                margin-left: -10px
+                .calc-item
+                    margin: 0 10px
+        &-column
+            width: 100%
+            padding: 20px
+            &__wrapper
+                width: 100%
+                &:first-child
+                    border-right: none
+                    border-bottom: 1px solid $grayLight
