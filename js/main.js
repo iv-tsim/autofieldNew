@@ -205,7 +205,46 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerGroup: 1,
         observer: true,
         observeParents: true,
-        touchEventsTarget: 'wrapper'
+        touchEventsTarget: 'wrapper',
+        breakpoints: {
+
+            1100: {
+
+                spaceBetween: 20
+
+            },
+            900: {
+
+                spaceBetween: 12
+
+            },
+            700: {
+
+                direction: 'horizontal',
+                spaceBetween: 20,
+                slidesPerView: 4
+
+            },
+            600: {
+
+                direction: 'horizontal',
+                slidesPerView: 3
+
+            },
+            370: {
+
+                direction: 'horizontal',
+                slidesPerView: 2
+
+            },
+            0: {
+
+                direction: 'horizontal',
+                slidesPerView: 1
+
+            },
+
+        }
 
     });
 

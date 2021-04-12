@@ -28,7 +28,7 @@
             width: calc(100% + 30px)
             margin-left: -15px
         &__item
-            flex-basis: 200px
+            flex-basis: 170px
             flex-grow: 1
             margin: 0 15px 50px 15px
             &-number
@@ -36,3 +36,57 @@
                 font-weight: 700
                 color: $main
                 margin-bottom: 10px
+
+@media (max-width: 1100px)
+    .model
+        &-safety
+            padding: 80px 0 20px 0
+            &__title
+                margin-bottom: 25px
+            &__text
+                margin-bottom: 40px
+            &__item
+                margin: 0 15px 30px 15px
+                &-number
+                    font-size: 44px
+
+@media (max-width: 900px)
+    .model
+        &-safety
+            padding: 60px 0 20px 0
+            &__title
+                margin-bottom: 20px
+            &__text
+                margin-bottom: 30px
+            &__item
+                margin: 0 15px 20px 15px
+                flex-basis: 150px
+                &-number
+                    font-size: 36px
+                    margin-bottom: 5px
+
+@media (max-width: 750px)
+    .model
+        &-safety
+            padding: 40px 0 20px 0
+            &__container
+                flex-direction: column
+            &__title
+                margin-bottom: 15px
+            &__text
+                margin-bottom: 20px
+            &__main
+                width: 100%
+                margin-bottom: 20px
+            &__img
+                width: 70%
+                margin: 0 auto
+
+@media (max-width: 600px)
+    .model
+        &-safety
+            padding: 30px 0 20px 0
+            &__main
+                margin-bottom: 10px
+            &__img
+                width: 100%

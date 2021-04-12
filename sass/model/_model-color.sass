@@ -64,6 +64,7 @@
                 font-weight: 700
                 color: $gray
                 transition: .3s color
+                text-align: center
             &.swiper-slide-thumb-active, &:hover
                 .model-color__thumb-color
                     &::after
@@ -71,3 +72,56 @@
                         visibility: visible
                 .model-color__thumbs-text
                     color: $grayDark
+
+@media (max-width: 1100px)
+    .model
+        &-color
+            padding-bottom: 100px
+            &__thumbs
+                max-height: 340px
+
+@media (max-width: 900px)
+    .model
+        &-color
+            padding-bottom: 70px
+            &__container
+                flex-direction: column
+            &__title
+                position: relative
+                left: auto
+                top: auto
+                margin-bottom: 20px
+            &__slider
+                &-wrapper
+                    width: 100%
+                    margin-left: 0
+                    margin-right: 0
+                    margin-bottom: 30px
+                &-arrows
+                    left: 50%
+                    z-index: 2
+                    bottom: -10px
+                    transform: translateX(-50%)
+            &__thumbs
+                width: 100%
+                max-height: 100%
+                align-self: flex-start
+                flex-grow: unset
+                .swiper-wrapper
+                    align-items: center
+            &__thumb
+                justify-content: center
+                &-color
+                    margin-right: 20px
+                &.swiper-slide-active
+                    .model-color__thumb-color
+                        &::after
+                            opacity: 1
+                            visibility: visible
+                    .model-color__thumbs-text
+                        color: $grayDark
+
+@media (max-width: 600px)
+    .model
+        &-color
+            padding-bottom: 40px

@@ -11,6 +11,7 @@
             background-repeat: no-repeat
             background-position: center center
             background-size: cover
+            position: relative
             &-sizer
                 padding-bottom: 28.6%
         &__info
@@ -77,3 +78,42 @@
                     opacity: 0
                     visibility: hidden
             
+@media (max-width: 1110px)
+    .model
+        &-parts
+            &__tabs
+                margin-bottom: 30px
+            &__info
+                top: 20px
+                left: 15px
+                padding: 15px 20px 20px 20px
+                &-title
+                    margin-bottom: 15px
+
+@media (max-width: 900px)
+    .model
+        &-parts
+            &__tabs
+                margin-bottom: 20px
+            &__info
+                top: 15px
+                padding: 10px 15px 15px 15px
+                max-width: 350px
+                &-title
+                    margin-bottom: 10px
+
+@media (max-width: 750px)
+    .model
+        &-parts
+            &__info
+                position: relative
+                left: 0
+                top: 0
+                max-width: 100%
+                &::after
+                    opacity: 0.9
+            &__circle
+                width: 35px
+                height: 35px
+                &-img
+                    width: 20px

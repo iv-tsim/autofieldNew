@@ -6,7 +6,8 @@
             align-items: center
             margin-bottom: 55px
         &__title
-            width: calc((100% / 3) + 30px)
+            width: calc((100% / 3) + 10px)
+            margin-right: 20px
         &__desc
             max-width: 630px
             color: $gray
@@ -43,3 +44,62 @@
                 display: flex
                 align-items: flex-end
                 justify-content: space-between
+
+@media (max-width: 1100px)
+    .model
+        &-features
+            padding: 70px 0 50px 0
+            &__top
+                margin-bottom: 45px
+            &__text
+                &-item
+                    &__title
+                        font-size: 40px
+                        margin-bottom: 40px
+
+@media (max-width: 900px)
+    .model
+        &-features
+            padding: 50px 0 40px 0
+            &__top
+                margin-bottom: 30px
+            &__img
+                min-width: auto
+            &__text
+                &-wrapper
+                    width: 100%
+                    max-width: 100%
+                &-item
+                    &__title
+                        font-size: 30px
+                        margin-bottom: 25px
+
+@media (max-width: 760px)
+    .model
+        &-features
+            padding: 40px 0 30px 0
+            &__main
+                flex-direction: column
+            &__top
+                margin-bottom: 20px
+            &__img
+                margin: 0 auto
+                margin-bottom: 20px
+                width: 50%
+            &__text
+                max-width: 100%
+                &-wrapper
+                    align-self: flex-start
+
+@media (max-width: 500px)
+    .model
+        &-features
+            padding: 30px 0 30px 0
+            &__top
+                flex-direction: column
+            &__title
+                width: 100%
+                margin-bottom: 15px
+                margin-right: 0
+            &__img
+                width: 100%

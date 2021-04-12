@@ -7,7 +7,7 @@
             width: calc(100% + 30px)
             margin-left: -15px
         &__item
-            flex-basis: 400px
+            flex-basis: 360px
             flex-grow: 1
             margin: 0 15px 30px 15px
             span
@@ -21,3 +21,30 @@
                     padding-bottom: 54%
             &-title
                 margin-bottom: 20px
+
+@media (max-width: 1100px)
+    .model
+        &-advantages
+            padding-bottom: 70px
+            &__item
+                &-img
+                    margin-bottom: 20px
+                &-title
+                    margin-bottom: 15px
+
+@media (max-width: 900px)
+    .model
+        &-advantages
+            padding-bottom: 50px
+            &__item
+                flex-basis: 330px
+                margin: 0 15px 20px 15px
+                &-img
+                    margin-bottom: 15px
+                &-title
+                    margin-bottom: 10px
+
+@media (max-width: 600px)
+    .model
+        &-advantages
+            padding-bottom: 20px
