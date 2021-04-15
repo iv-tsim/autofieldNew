@@ -20,6 +20,85 @@ $(document).ready(function() {
         }
     });
 
+    $('.calc-main').validate({
+
+        rules: {
+
+            userName: 'required',
+            userPhone: 'required'
+
+        },
+        messages: {
+
+            userName: 'Пожалуйста, введите имя',
+            userPhone: 'Пожалуйста, введите телефон'
+
+        },
+        submitHandler: function (form) {
+
+            fetch('../form.json', {
+
+                method: 'post',
+                body: data
+
+            }).then( response => {
+
+                if (response.success) {
+
+                    alertify.success(response.message);
+
+                } else {
+
+                    alertify.error(response.error.message);
+
+                }
+
+            } )
+
+        }
+
+    });
+
+    $('.app-form').validate({
+
+        rules: {
+
+            userName: 'required',
+            userPhone: 'required'
+
+        },
+        messages: {
+
+            userName: 'Пожалуйста, введите имя',
+            userPhone: 'Пожалуйста, введите телефон',
+            userEmail: 'Пожалуйста, введите E-mail'
+
+        },
+        submitHandler: function (form) {
+
+            fetch('../form.json', {
+
+                method: 'post',
+                body: data
+
+            }).then( response => {
+
+                if (response.success) {
+
+                    alertify.success(response.message);
+
+                } else {
+
+                    alertify.error(response.error.message);
+
+                }
+
+            } )
+
+        }
+
+    });
+
 });
 
 document.addEventListener('DOMContentLoaded', () => {

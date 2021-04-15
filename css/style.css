@@ -908,6 +908,10 @@ textarea, input {
   width: 100%;
 }
 
+.app-submit {
+  cursor: pointer;
+}
+
 .app-policy {
   font-size: 9px;
 }
@@ -1384,6 +1388,7 @@ textarea, input {
 
 .calc-submit {
   width: 100%;
+  cursor: pointer;
 }
 
 @media (max-width: 1100px) {

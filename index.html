@@ -168,7 +168,7 @@
             <section class="calc">
                 <div class="container calc-container">
                     <h2 class="title calc-title">Кредитный калькулятор</h2>
-                    <div class="calc-main">
+                    <form action="" method="get" class="calc-main">
                         <div class="calc-column__wrapper">
                             <div class="calc-column">
                                 <div class="calc-item">
@@ -185,7 +185,7 @@
                                             <div class="input choose-item">TAHOE1</div>
                                             <div class="input choose-item">TAHOE2</div>
                                         </div>
-                                        <input type="text" class="choose-input">
+                                        <input type="text" class="choose-input" name="carModel">
                                     </div>
                                 </div>
                                 <div class="calc-item calc-item__range-value">
@@ -207,7 +207,7 @@
                                                 <div class="input choose-item active">1 год</div>
                                                 <div class="input choose-item">2 года</div>
                                             </div>
-                                            <input type="text" class="choose-input">
+                                            <input type="text" class="choose-input" name="period">
                                         </div>
                                     </div>
                                     <div class="calc-item">
@@ -223,29 +223,29 @@
                                                 <div class="input choose-item active">Да</div>
                                                 <div class="input choose-item">Нет</div>
                                             </div>
-                                            <input type="text" class="choose-input">
+                                            <input type="text" class="choose-input" name="trade-in">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="calc-column__wrapper">
-                            <form action="#" class="calc-column">
+                            <div class="calc-column">
                                 <div class="calc-item">
                                     <div class="input-title">Введите имя</div>
-                                    <input type="text" class="input calc-input">
+                                    <input type="text" class="input calc-input" name="userName" required>
                                 </div>
                                 <div class="calc-item">
                                     <div class="input-title">Введите телефон</div>
-                                    <input type="tel" class="input calc-input">
+                                    <input type="tel" class="input calc-input" name="userPhone" required>
                                 </div>
                                 <div class="text_small calc-policy">
                                     Нажимая кнопку, вы даете согласие на <a href="#" class="link link_reverse policy">обработку персональных данных</a>
                                 </div>
                                 <input type="submit" class="btn calc-submit" value="Далее">
-                            </form>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </section>
             <section class="slider newsSlider">
@@ -415,6 +415,8 @@
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/jquery.maskedinput.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/alertify.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
