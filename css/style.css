@@ -270,6 +270,10 @@ textarea, input {
   stroke: #C4C4C4;
 }
 
+.choose-input {
+  display: none;
+}
+
 .range {
   height: 1px;
   background-color: #F4BC00;

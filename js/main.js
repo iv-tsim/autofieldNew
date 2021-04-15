@@ -283,26 +283,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 let index = this.realIndex
 
-                if (!sliderFlag) {
-
-                    setTimeout(function() {modelFeaturesText.slideTo(index)}, 200);
-                    
-                    sliderFlag = 1;
-
-                }
-
-
-            },
-            slideChangeTransitionEnd() {
-
-                sliderFlag = 0;
+                modelFeaturesText.slideTo(index);
 
             }
         }
 
     });
-
-    let sliderFlag = 0;
 
     let modelFeaturesText = new Swiper('.model-features__text', {
 
@@ -331,19 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 let index = this.realIndex
 
-                if (!sliderFlag) {
-
-                    setTimeout(function() {modelFeaturesImg.slideTo(index)}, 200);
-                    
-                    sliderFlag = 1;
-
-                }
-
-
-            },
-            slideChangeTransitionEnd() {
-
-                sliderFlag = 0;
+                modelFeaturesImg.slideTo(index);
 
             }
         }
@@ -536,6 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (target.matches('.choose-item')) {
 
             let wrapper = target.closest('.choose');
+            let text = target.textContent;
 
             removeActiveInCurrent(wrapper);
 
@@ -543,7 +518,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             target.classList.add('active');
 
-            wrapper.querySelector('.choose-top__text').textContent = target.textContent;
+            wrapper.querySelector('.choose-top__text').textContent = text;
+            wrapper.querySelector('.choose-input').value = text;
 
             slideUp(wrapper.querySelector('.choose-body'));
 
