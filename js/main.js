@@ -2,6 +2,9 @@ $(document).ready(function() {
 
     $('input[type=tel]').mask("+7 (999) 999-99-99");
 
+    alertify.set('notifier', 'position', 'bottom-right');
+    alertify.set('notifier', 'delay', 10);
+
     $(document).on('click', '.model-specs__item-top', function(){
 
         let siblings_this = $(this).siblings('.model-specs__item-body'); 
@@ -39,7 +42,7 @@ $(document).ready(function() {
             fetch('../form.json', {
 
                 method: 'post',
-                body: data
+                body: $(form).serialize()
 
             }).then( response => {
 
@@ -79,7 +82,7 @@ $(document).ready(function() {
             fetch('../form.json', {
 
                 method: 'post',
-                body: data
+                body: $(form).serialize()
 
             }).then( response => {
 
@@ -679,7 +682,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
 
-        if (!target.closest('.menu.active') || target.matches('.menu-close')) {
+        if ((!target.closest('.menu') && menu.classList.contains('active')) || target.matches('.menu-close')) {
 
             event.preventDefault();
             menu.classList.remove('active');
