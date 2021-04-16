@@ -23,6 +23,9 @@ $(document).ready(function() {
         }
     });
 
+    let successMessage = 'Сообщение успешно отправлено';
+    let errorMessage = 'Произошла ошибка при отправке';
+
     $('.calc-main').validate({
 
         rules: {
@@ -48,11 +51,11 @@ $(document).ready(function() {
 
                 if (response.success) {
 
-                    alertify.success(response.message);
+                    alertify.success(successMessage);
 
                 } else {
 
-                    alertify.error(response.error.message);
+                    alertify.error(errorMessage);
 
                 }
 
@@ -88,11 +91,11 @@ $(document).ready(function() {
 
                 if (response.success) {
 
-                    alertify.success(response.message);
+                    alertify.success(successMessage);
 
                 } else {
 
-                    alertify.error(response.error.message);
+                    alertify.error(errorMessage);
 
                 }
 
